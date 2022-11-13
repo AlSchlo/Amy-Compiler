@@ -1,0 +1,1 @@
+Hanoi for 4 plates: 15
