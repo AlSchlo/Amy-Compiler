@@ -37,7 +37,6 @@ node [PATH_JS_MAIN_FILE]
 ## C Mode (-cmode)
 
 This mode generates a single C file in the `/cout` directory. Its name corresponds to the name of the Amy main module, not the Amy main file. The produced source code can for example be compiled with *gcc* and run as follows.
- ignore them
 ```sh
 gcc [PATH_C_MAIN_MODULE] [PATH/cout/error.h] [PATH/cout/std.h]
 ./[PATH_OUT]
