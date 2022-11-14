@@ -28,7 +28,7 @@ Examples of Amy files can be found in the `examples` folder.
 
 ## Wasm Mode (or Default)
 
-This mode generates a package of 4 files (HTML, JS, WASM, WAT) in the `/wasmout` directory. The produced code can simply be executed with *node* as follows.
+This mode generates a package of 4 files (HTML, JS, WASM, WAT) in the `/wasmout` newly-created directory. The produced code can simply be executed with *node* as follows.
 
 ```sh
 node [PATH_JS_MAIN_FILE]
