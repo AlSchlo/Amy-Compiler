@@ -46,4 +46,3 @@ gcc [PATH_C_MAIN_MODULE] [PATH/cout/error.h] [PATH/cout/std.h]
 
 -  The order of arguments is important.
 - Sometimes gcc may issue warnings. These can safely be ignored.
-- The generated C file has the name of the Amy main *module*, not the main file.
