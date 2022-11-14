@@ -1,4 +1,4 @@
-# CLP - Amy Compiler with C Backend
+# CLP - Amy Compiler
 
 ## Presentation
 
