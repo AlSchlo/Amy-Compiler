@@ -17,17 +17,19 @@ object Main extends MainHelpers {
   }
 
   def main(args: Array[String]): Unit = {
-    val ctx = parseArgs(args)
     val pipeline =
-      Lexer andThen
-      Parser andThen
-      NameAnalyzer andThen
-      TypeChecker andThen
-      //WasmGen andThen
-      //WasmPrinter
-      CGen andThen
-      CPrinter
-      
+        Lexer andThen
+        Parser andThen
+        NameAnalyzer andThen
+        TypeChecker andThen
+        (if args.contains("-cmode") then 
+          CGen andThen
+          CPrinter
+        else
+          WasmGen andThen
+          WasmPrinter)
+
+    val ctx = parseArgs(args.filter(_ != "-cmode"))
 
     val files = ctx.files.map(new File(_))
 
